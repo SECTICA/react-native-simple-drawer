@@ -2,6 +2,7 @@
 
 const ReactNative = require('react-native');
 const React = require('react');
+const PropTypes = require('prop-types');
 
 const {
     PanResponder,
@@ -196,12 +197,12 @@ const Menu = class extends React.Component {
 };
 
 Menu.propTypes = {
-    disableGestures: React.PropTypes.any,
-    onChange: React.PropTypes.any,
-    menu: React.PropTypes.any,
-    style: React.PropTypes.any,
-    backdropStyle: React.PropTypes.any,
-    value: React.PropTypes.any,
+    disableGestures: PropTypes.any,
+    onChange: PropTypes.any,
+    menu: PropTypes.any,
+    style: PropTypes.any,
+    backdropStyle: PropTypes.any,
+    value: PropTypes.any,
 }
 
 Menu.defaultProps = {
